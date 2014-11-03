@@ -2,7 +2,7 @@ import FWCore.ParameterSet.Config as cms
 
 from Configuration.Generator.PythiaUESettings_cfi import *
 
-hiSignal = cms.EDFilter("Pythia6PtYDistGun",
+hiSignal = cms.EDProducer("Pythia6PtYDistGun",
                       PGunParameters = cms.PSet(ParticleID = cms.vint32(23), 
                                                 MaxY  = cms.double(2.5),
                                                 MinY  = cms.double(-2.5),   
